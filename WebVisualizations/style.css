@@ -13,8 +13,8 @@ header {
 }
 
 body {
-    background-color: lightgray;
-}
+    background-color: rgb(224, 223, 223);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
 a { color: inherit; 
     text-decoration: none;
@@ -115,12 +115,43 @@ h3 {
     max-width: 100%;
 }
 
+#data_info {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 1%;
+}
+
+#data_info h2 {
+    margin-top: 1%;
+    margin-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#data_info hr {
+    margin-bottom: 5%;
+}
+
+table {
+    max-width: 100%;
+    border-collapse: inherit;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#table_scroll {
+    overflow: scroll;
+}
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
    
 }
 @media (max-width: 768px) {
-    #info, #comp_info{
+    #info, #comp_info, #data_info{
         margin-left: 0px;
         margin-top: 0px;
     }
@@ -144,7 +175,7 @@ h3 {
     }
 }
 @media (max-width: 576) {
-    #info, #comp_info{
+    #info, #comp_info, #data_info{
         margin-left: 0px;
         margin-top: 0px;
     }
