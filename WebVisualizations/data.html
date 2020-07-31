@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Comparisons</title>
+    <title>Data</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1/12/9/umd/popper.min/js"></script>
@@ -46,26 +46,53 @@
 </header>
 
 <!--Main information-->
-<div class = "container-fluid" id = "comparison_container">
-        <div class = "col-md-9 col-sm-12" id = "comp_info">
-            <h2>Comparison: Latitude vs. X</h2>
-            <hr>
-            <p>Click any plot to get an in-depth analysis.</p>
-            <div class = "row" id = comp_images>
-                <div class = "column">
-                    <h3>vs. Max Temperature</h3>
-                    <a href="max_temp.html"><img src = "Resources/assets/images/Fig1.png" height = "300" width = "350"></a>
-                    <h3>vs. Cloudiness</h3>
-                    <a href="lat_vs_cloud.html"><img src = "Resources/assets/images/Fig3.png" height = "300" width = "350"></a>
-                </div>
-                <div class = "column">
-                    <h3>vs. Humidity</h3>
-                    <a href="lat_vs_humid.html"><img src = "Resources/assets/images/Fig2.png" height = "300" width = "350"></a>
-                    <h3>vs. Wind Speed</h3>
-                    <a href="lat_vs_wind.html"><img src = "Resources/assets/images/Fig4.png" height = "300" width = "350"></a>
-                </div>
-            </div>
-        </div>
+<div class = "container-fluid" id = "info">
+
 </div>
-</body>
+
+
+
+
+
+<!-- <div>
+    <script type="text/javascript">
+        function Upload() {
+            var fileUpload = document.getElementById("fileUpload");
+            var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.csv|.txt)$/;
+            if (regex.test(fileUpload.value.toLowerCase())) {
+                if (typeof (FileReader) != "undefined") {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        var table = document.createElement("table");
+                        var rows = e.target.result.split("\n");
+                        for (var i = 0; i < rows.length; i++) {
+                            var cells = rows[i].split(",");
+                            if (cells.length > 1) {
+                                var row = table.insertRow(-1);
+                                for (var j = 0; j < cells.length; j++) {
+                                    var cell = row.insertCell(-1);
+                                    cell.innerHTML = cells[j];
+                                }
+                            }
+                        }
+                        var dvCSV = document.getElementById("dvCSV");
+                        dvCSV.innerHTML = "";
+                        dvCSV.appendChild(table);
+                    }
+                    reader.readAsText(fileUpload.files[0]);
+                } else {
+                    alert("This browser does not support HTML5.");
+                }
+            } else {
+                alert("Please upload a valid CSV file.");
+            }
+        }
+    </script>
+    </div>
+    <input type="file" id="fileUpload" />
+    <input type="button" id="upload" value="Upload" onclick="Upload()" />
+    <hr />
+    <div id="dvCSV">
+    </div> -->
+    </body>
 </html>

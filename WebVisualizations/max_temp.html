@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Comparisons</title>
+    <title>Max Temperature</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1/12/9/umd/popper.min/js"></script>
@@ -11,7 +11,7 @@
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="style.css" rel="stylesheet">
 </head>
-<body style="background-color:lightgray;">
+<body>
 
 <!--Header-->
 <header class = "row">
@@ -46,26 +46,28 @@
 </header>
 
 <!--Main information-->
-<div class = "container-fluid" id = "comparison_container">
-        <div class = "col-md-9 col-sm-12" id = "comp_info">
-            <h2>Comparison: Latitude vs. X</h2>
+<div class = "container-fluid">
+    <div class = "row">
+        <div class = "col-md-6" id = "info">
+            <h2>Max Temperature</h2>
             <hr>
-            <p>Click any plot to get an in-depth analysis.</p>
-            <div class = "row" id = comp_images>
-                <div class = "column">
-                    <h3>vs. Max Temperature</h3>
-                    <a href="max_temp.html"><img src = "Resources/assets/images/Fig1.png" height = "300" width = "350"></a>
-                    <h3>vs. Cloudiness</h3>
-                    <a href="lat_vs_cloud.html"><img src = "Resources/assets/images/Fig3.png" height = "300" width = "350"></a>
-                </div>
-                <div class = "column">
-                    <h3>vs. Humidity</h3>
-                    <a href="lat_vs_humid.html"><img src = "Resources/assets/images/Fig2.png" height = "300" width = "350"></a>
-                    <h3>vs. Wind Speed</h3>
-                    <a href="lat_vs_wind.html"><img src = "Resources/assets/images/Fig4.png" height = "300" width = "350"></a>
-                </div>
+            <img id = "vis_fig" src = "Resources/assets/images/Fig1.png" height = "350" width = "500">
+            <p>As expected, the weather becomes significatly warmer as one approaches the equator (0 Deg. Lattitude).
+                More interesstingly, however, is the fact that southern hemisphere tends to be warmer this time of the year than the northern hemisphere.
+                This may be due to the lilt of the earth at the time of the year this was gathered.
+            </p>
+        </div>
+        <div class = "col-md-4" id = "visualizations">
+            <h2>Visualizations</h2>
+            <hr>
+            <div id = "img_box">
+                <a href="max_temp.html"><img src = "Resources/assets/images/Fig1.png" height = "150" width = "150"></a>
+                <a href="lat_vs_humid.html"><img src = "Resources/assets/images/Fig2.png" height = "150" width = "150"></a>
+                <a href="lat_vs_cloud.html"><img src = "Resources/assets/images/Fig3.png" height = "150" width = "150"></a>
+                <a href="lat_vs_wind.html"><img src = "Resources/assets/images/Fig4.png" height = "150" width = "150"></a>
             </div>
         </div>
+    </div>
 </div>
 </body>
 </html>

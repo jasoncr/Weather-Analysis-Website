@@ -11,31 +11,46 @@
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="style.css" rel="stylesheet">
 </head>
-<body style="background-color:lightgray;">
-    
-<!--Navigation-->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-<div class="container-fluid">
-    <h1>Latitude</h1>
-    <div class="collapse navbar-collapse" id="navbarResponse">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Plots</a>
+<body>
+
+<!--Header-->
+<header class = "row">
+    <h1><a href = "index.html">Latitude</a></h1>
+    <nav class="navbar navbar-expand-md navbar-light" id = "right">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                    <a class="dropdown-item" href="lat_vs_humid.html">Humidity</a>
+                    <a class="dropdown-item" href="lat_vs_cloud.html">Cloudiness</a>
+                    <a class="dropdown-item" href="lat_vs_wind.html">Wind Speed</a>
+                </div>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Comparison</a>
+            <li class="nav-item">
+                <a class="nav-link" href="comparisons.html">Comparison</a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Data</a>
+            <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
             </li>
-        </ul>
-    </div>
-</div>
-</nav>
-<div class = "container">
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!--Main information-->
+<div class = "container-fluid">
     <div class = "row">
-        <div class = "col-md-6" id = "info">
+        <div class = "col-md-6 col-sm-12" id = "info">
             <h2>Summary: Latitude vs. X</h2>
+            <hr>
             <img src = "Resources/assets/images/Fig1.png" height = "200" width = "250">
             <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. 
                 To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
@@ -48,15 +63,15 @@
         </div>
         <div class = "col-md-4" id = "visualizations">
             <h2>Visualizations</h2>
+            <hr>
             <div id = "img_box">
-                <a href="https://www.google.com/?gws_rd=ssl"><img src = "Resources/assets/images/Fig1.png" height = "150" width = "150"></a>
-                <a href="https://www.google.com/?gws_rd=ssl"><img src = "Resources/assets/images/Fig2.png" height = "150" width = "150"></a>
-                <a href="https://www.google.com/?gws_rd=ssl"><img src = "Resources/assets/images/Fig3.png" height = "150" width = "150"></a>
-                <a href="https://www.google.com/?gws_rd=ssl"><img src = "Resources/assets/images/Fig4.png" height = "150" width = "150"></a>
+                <a href="max_temp.html"><img src = "Resources/assets/images/Fig1.png" height = "150" width = "150"></a>
+                <a href="lat_vs_humid.html"><img src = "Resources/assets/images/Fig2.png" height = "150" width = "150"></a>
+                <a href="lat_vs_cloud.html"><img src = "Resources/assets/images/Fig3.png" height = "150" width = "150"></a>
+                <a href="lat_vs_wind.html"><img src = "Resources/assets/images/Fig4.png" height = "150" width = "150"></a>
             </div>
         </div>
     </div>
 </div>
-
 </body>
 </html>

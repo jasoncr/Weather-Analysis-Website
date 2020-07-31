@@ -1,66 +1,51 @@
-/*---Media Queries --*/
-@media (max-width: 992px) {
-
-}
-@media (max-width: 768px) {
-
-}
-@media (max-width: 576) {
-
+.navbar-light .navbar-nav .nav-link {
+    color: black;
 }
 
-
-.carousel-item {
-    transition -webkit-transform 0.5s ease;
-    transition transform 0.5s ease;
-    transition transform 0.5s ease, -webkit-transform 0.5s ease;
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
+header {
+    background-color: white;
+    margin-bottom: 1%;
 }
 
-*/--- Fixed Background Image --*/
-figure {
-    position: relative;
-    width: 100%;
-    height: 60%;
-    margin: 0!important;
-}
-.fixed-wrap {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%
+#right {
+    margin-left: auto!important;
+    margin-right: 2%;
 }
 
-
-#fixed {
-    background-image: url('img/mac.png');
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    will-change: transform: tranform;
-
+body {
+    background-color: lightgray;
 }
-/*-- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
+
+a { color: inherit; 
+    text-decoration: none;
+} 
+
+.navbar {
+    padding: 0%;
 }
 
 h1 {
     color:white;
     background-color: rgb(81, 183, 214);
-    padding: 10px;
-    border-radius: 10px;
+    border-radius: 3px;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 200%;
+    margin-left: 10px;    
+    margin-bottom: 0%;
 }
+
+#info {
+    background-color: white;
+    margin-left: 7%;
+    margin-top: 40px;
+}
+
+hr {
+    margin-top: 0%;
+    margin-bottom: 10%;
+}
+
 
 #info img {
     float: left;
@@ -68,15 +53,11 @@ h1 {
 
 h2 {
     color: rgb(81, 183, 214);
-    padding-top: 10px;
-    padding-bottom: 45px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-#info {
-    background-color: white;
-    margin-left: 80px;
-    margin-top: 40px;
-}
+
 
 #visualizations {
     background-color: white;
@@ -86,15 +67,98 @@ h2 {
 }
 
 #img_box {
-    margin-left: 18px;
+    margin-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#comp_visuals {
+#comparison_container hr {
+    margin-bottom: 3%;
+}
+
+#comp_info {
     background-color: white;
-    align-items: center;
+    margin-left: auto;
     margin-top: 40px;
+    margin-right: auto;
 }
 
-#comp_visuals img {
-    margin-left: 20px;
+p {
+    font-size: 90%;
 }
+
+h3 {
+    font-size: 115%;
+    margin-left: 30%;
+    margin-right: auto;
+    color: rgb(81, 183, 214);
+}
+
+#comp_info .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 4px;
+}
+
+#comp_info .column {
+    flex: 50%;
+    max-width: 50%;
+}
+
+#comp_info .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#vis_fig {
+    max-width: 100%;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+   
+}
+@media (max-width: 768px) {
+    #info, #comp_info{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    header {
+        background-color: rgb(81, 183, 214);
+        margin-bottom: 0%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    #visualizations {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    #comparison_container {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    #comp_info .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 576) {
+    #info, #comp_info{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    #visualizations {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    #comparison_container {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    #comp_info .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
