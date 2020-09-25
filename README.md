@@ -11,8 +11,8 @@ The nav bar allows the user to go to the same web pages as the side bar, as well
 
 As you can see, this website displays the findings in an attractive and intuitive fashion. The user can easily find what they are looking for, therefore they spend less time  hunting for information and more time learning from what the webpage has to offer. I included 2 more screen shots for reference. 
 
+<img src="WebVisualizations/Resources/assets/images/max_temp.png" width=750>
 
-
-
+<img src="WebVisualizations/Resources/assets/images/comparison.png" width=750>
 
 Access the main page by going to:  [https://jasoncr.github.io/Web-Design-Challenge/WebVisualizations/index.html](https://jasoncr.github.io/Web-Design-Challenge/WebVisualizations/index.html)
