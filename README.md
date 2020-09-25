@@ -3,9 +3,9 @@ For this challenge, I created 7 html pages and a corresponding css to showcase t
 
 The first webpage will be the landing page for the user. It should give project summary, a side bar with images are linked to one of the four scatter plots comparisons web pages, and a nav bar at the top. The nav bar allows the user to go to the same web pages as the side bar, as well as a comparison page and a page that displays the data used from a csv. I considered that this website might be viewed from a mobile device, therefore I made it responsive to a smaller screen. Below I included screen shots of both the landing page viewed from a large screen as well as a small screen. 
 
-<img src="WebVisualizations/Resources/assets/images/landing_large.png" width=600>
+<img src="WebVisualizations/Resources/assets/images/landing_large.png" width=750>
 
-<img src="WebVisualizations/Resources/assets/images/landing_small.png" width=600>
+<img src="WebVisualizations/Resources/assets/images/landing_small.png" width=500>
 
 All the pages include scatter plots of our previous work as well as an analysis. They also all link to each other.  
 
