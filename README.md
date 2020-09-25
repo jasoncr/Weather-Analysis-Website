@@ -9,4 +9,4 @@ The first webpage will be the landing page for the user. It should give project 
 
 All the pages include scatter plots of our previous work as well as an analysis. They also all link to each other.  
 
-Access the main page by going to:  [https://jasoncr.github.io/Web-Design-Challenge/WebVisualizations/index.html](https://jasoncr.github.io/Web-Design-Challenge/WebVisualizations/index.html)
+Access the main page by going to:  [here](https://jasoncr.github.io/Web-Design-Challenge/WebVisualizations/index.html)
