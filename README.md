@@ -1,4 +1,6 @@
 # Web-Design-Challenge
+Access the landing page by going to:  [https://jasoncr.github.io/Web-Design-Challenge/WebVisualizations/index.html](https://jasoncr.github.io/Web-Design-Challenge/WebVisualizations/index.html)
+
 For this challenge, I created 7 html pages and a corresponding css to showcase the results of a previous analysis. This website has the data, visualizations, and the conclusions from my [python-api-challenge](https://github.com/jasoncr/python-api-challenge). 
 
 The first webpage is the landing page for the user. It gives project summary, a side bar with links, and a nav bar at the top. The side bar displays the scatter plots from the four different comparisons between latitude and another variable. Each of the scatter plot images goes to their corresponding webpage that gives some more information about that analysis. 
@@ -15,4 +17,4 @@ As you can see, this website displays the findings in an attractive and intuitiv
 
 <img src="WebVisualizations/Resources/assets/images/comparison.png" width=750>
 
-Access the main page by going to:  [https://jasoncr.github.io/Web-Design-Challenge/WebVisualizations/index.html](https://jasoncr.github.io/Web-Design-Challenge/WebVisualizations/index.html)
+
