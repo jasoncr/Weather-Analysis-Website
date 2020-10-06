@@ -1,4 +1,4 @@
-# Web-Design-Challenge
+# Weather-Analysis-Website
 Access the landing page by going to:  [https://jasoncr.github.io/Web-Design-Challenge/WebVisualizations/index.html](https://jasoncr.github.io/Web-Design-Challenge/WebVisualizations/index.html)
 
 For this challenge, I created 7 html pages and a corresponding css to showcase the results of a previous analysis. This website has the data, visualizations, and the conclusions from my [python-api-challenge](https://github.com/jasoncr/python-api-challenge). 
